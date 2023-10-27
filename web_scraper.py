@@ -16,8 +16,10 @@ if response.status_code == 200:
     # For example, let's extract all the text within <p> tags
     paragraphs = soup.find_all("p")
 
-    # Print the clean text content
-    for paragraph in paragraphs:
-        print(paragraph.get_text())
+    # Save the clean text content to a file 
+    # Changes by iqra
+    with open("output.txt", "w") as file:  
+        for paragraph in paragraphs:
+            file.write(paragraph.get_text() + "\n")
 else:
     print("Failed to retrieve the webpage. Status code:", response.status_code)
