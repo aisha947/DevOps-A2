@@ -21,3 +21,7 @@ if response.status_code == 200:
         print(paragraph.get_text())
 else:
     print("Failed to retrieve the webpage. Status code:", response.status_code)
+
+
+
+#changes made by ayesha without knowing that iqra commit a change as well before
