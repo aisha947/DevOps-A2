@@ -1,0 +1,1 @@
+QA Guidelines:\n- Test the web scraper for various websites.\n- Verify the output format.\n- Check for error handling.
