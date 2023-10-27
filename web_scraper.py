@@ -21,3 +21,4 @@ if response.status_code == 200:
         print(paragraph.get_text())
 else:
     print("Failed to retrieve the webpage. Status code:", response.status_code)
+#2nd attempt
